@@ -28,8 +28,56 @@
     </script>
 
 </head>
+   
 
 <body>
+    <header>
+     <!----------Inicio de formulario-->
+ <div class="formulario_body hide">
+  
+    <form action="" class="formulario ">
+      
+  <div class="formu_titulo">
+      <h1 class="formulario__titulo"><strong> Small</strong> Smile <i class="fa-solid fa-tooth" alt="Cierre"></i></h1>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario.
+      </p>
+    </div>
+    
+    <div class="formu_formu">
+      <div class="form_cierre show"><i class="fa-solid fa-xmark"></i></div>
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input id="cliente" type="text" class="formulario__input" placeholder="Indica cuál es tu nombre completo" />
+  
+      <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
+      <select id="servicio" name="listaservicios" class="formulario__input">
+        <option>Odontologia General</option>
+        <option>Profilaxis dental (Limpieza)</option>
+        <option>Aplicacion de Floruro</option>
+        <option>Aplicación de Resinas</option>
+        <option>Incrustaciones</option>
+        <option>Coronas</option>
+        <option>Puentes</option>
+        <option>Ortodoncia</option>
+        <option>Blanqueamiento</option>
+        <option>Endodoncias</option>
+        <option>Rayos X</option>
+        <option>Extracciones</option>
+        <option>Cirugia de Terceros Molares</option>
+        <option>Selladores de Fosas y Fisuras</option>
+      </select>
+  
+      <label for="comentario" class="formulario__label">Comentario</label>
+      <textarea id="comentario" class="formulario__input" placeholder="Agrega un comentario"></textarea>
+  
+      <div id="respuesta"></div>
+  
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </div>
+    </form>
+  </div>
+    <!-----Fin de formulario------->
+   </header>
     <section class="hero-section" id="js-hero">
         <img src="img/dentis-4.jpg" alt="IMAGEN PRINCIPAL" loading="lazy" />
 
@@ -80,15 +128,16 @@
                 </div>
             </div>
             <!---->
-            <div class="main_princi">   
-                    <h3> C.D. Margarita Carolina Galeana Carreño </h3>
+            <div class="main_titulo">
+                <div class="main_princi">   
+                    <h1> C.D. Margarita Carolina Galeana Carreño </h1>
                     <span>Especialista en Ortodoncia</span> <br>
                     <em>Cedula Prof. 8786796</em>
-                   
-                </div>
-                <div class="main_cari"> 
+                </div>    
+            </div>
+            <!--    <div class="main_cari"> 
                     <img src="img/caricauradiente2.png" alt="">
-                </div>
+                </div>-->
         </div>
 
     </section>
@@ -101,20 +150,22 @@
         <div class="container_card">
 
 
-            <div class="card-wrapper">  
+            <div class="card-wrapper">
                 <div class="card-top">  
-                 <img class="image" src="img/odontologia_general.jpg">  
+                <span class="top-text2">Odontologia General</span>  
+                 <img class="image" src="img/odontologia_general.jpg">
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Odontologia General</span><br>  
                  <span class="bottom-text">Contamos con un equipo especializado que realizará el diagnóstico y plan de tratamiento acorde a tus necesidades.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
+                <div class="card-top"> 
+                    <span class="top-text2">Odontología preventiva</span> 
                  <img class="image" src="img/odontologia_general.jpg">  
                 </div>  
                 <div class="card-bottom">  
@@ -122,129 +173,138 @@
                  <span class="bottom-text">Tener una boca sana es de suma importancia para tu cuerpo, ayuda a mantener una salud digestiva,
                     a prevenir enfermedades cardiacas, elevar tu atoestima y por supuesto evitar dolor. 
                     Te ofrecemos tratamientos preventivos como:</span>  
-                 <br>  
-                 <button class="button">Click Aqui</button>  
+                 <br>   
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Profilaxis dental</span> 
+                 <img class="image" src="img/Profilaxis.jfif">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Profilaxis dental</span><br>  
                  <span class="bottom-text">El principal objetivo es prevenir enfermedades, eliminando placa dentobacteriana y sarro.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Aplicacion de Floruro</span>  
+                 <img class="image" src="img/aplicacio_flour.jfif">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Aplicacion de Floruro</span><br>  
                  <span class="bottom-text">Fortalece al esmalte dental, evitando daños por la acción de bacterias</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Selladores</span>  
+                 <img class="image" src="img/sellado-de-fisura.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Selladores</span><br>  
                  <span class="bottom-text">Se colocan en las fosas y fisuras de los dientes para evitar lesiones cariosas.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top"> 
+                    <span class="top-text2">Resinas</span> 
+                 <img class="image" src="img/resinas.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Resinas</span><br>  
                  <span class="bottom-text">Son restauraciones utilizadas para sustituir el tejido dental dañado, el material que empleamos
                     es del color del diente, utilizamos material de alta estética y durabilidad para un resultado satisfactorio.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Odontología restauradora</span>  
+                 <img class="image" src="img/odontologia_general.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Odontología restauradora</span><br>  
                  <span class="bottom-text">Brindamos solución a problemas bucales, mediante la colocación de restauraciones de alta estética y durabilidad.
                     Ofrecemos:</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Incrustaciones</span>  
+                 <img class="image" src="img/incrustaciones.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Incrustaciones</span><br>  
                  <span class="bottom-text">Utilizadas para reparar los dientes posteriores que han sufrido una caries moderada, para cubrir grietas o
                     fracturas si el daño no es tan importante como para tener que colocar una corona dental</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Corona dental</span>  
+                 <img class="image" src="img/corona-dental.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Corona dental</span><br>  
                  <span class="bottom-text">Es una cofia con forma de diente que reemplaza su diente normal sobre la encía. Usted
                     podría necesitar una corona para soportar un diente débil o hacer que su diente se vea mejor.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Prótesis dental</span>  
+                 <img class="image" src="img/puente_dental.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Prótesis dental</span><br>  
                  <span class="bottom-text">La prótesis dental es un aditamento que se utiliza para reemplazar los dientes perdidos, existen varios diseños,
                     en Small Smile individualizamos cada tratamiento, eligiendo el mas adecuado para ti.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Ortodoncia</span>  
+                 <img class="image" src="img/ortodocia.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Ortodoncia</span><br>  
                  <span class="bottom-text">Si tienes dientes mal alinedos, ¡tenemos la solución para ti!; colocamos brackets y aditamentos en tu boca
                     para llevarlos a su correcta posición. Contamos con bracktes estéticos o metálicos.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Blanqueamiento</span>  
+                 <img class="image" src="img/blanqueamiento.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Blanqueamiento</span><br>  
@@ -252,13 +312,14 @@
                     El blanqueamiento dental tiene por objetivo eliminar
                     las manchas dentales y hacer que la dentición adquiera una tonalidad más blanca y brillante.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Endodoncia</span>  
+                 <img class="image" src="img/endodoncia.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Endodoncia</span><br>  
@@ -267,13 +328,14 @@
                     evitando así su pérdida. Para ello, se extrae la pulpa dental y la cavidad resultante, se rellena y
                     sella con material inerte y biocompatible.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
                <div class="card-wrapper">  
-                <div class="card-top">  
-                 <img class="image" src="https://images.unsplash.com/photo-1499676763409-c0211693a66b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">  
+                <div class="card-top">
+                    <span class="top-text2">Cirugía maxilofacial</span>  
+                 <img class="image" src="img/terceros_molares.jpg">  
                 </div>  
                 <div class="card-bottom">  
                  <span class="top-text">Cirugía maxilofacial</span><br>  
@@ -281,7 +343,7 @@
                     juicio —las cuatro piezas dentales permanentes de los adultos ubicadas en los extremos posteriores
                     de la boca, tanto arriba como abajo.</span>  
                  <br>  
-                 <button class="button">Click Aqui</button>  
+                 <button class="button col">Click Aqui</button>  
                 </div>  
                </div>
 
@@ -293,9 +355,25 @@
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
     <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        $('.col').click(function () {
+          $('.formulario_body').removeClass("hide");
+          $('formulario_body').addClass("show");
+        })
+        $('.form_cierre').click(function () {
+          $('.formulario_body').addClass("hide");
+          $('formulario_body').removeClass("show");
+        })
+      </script>
+    
+      
+    
 </body>
 
 </html>
