@@ -344,7 +344,31 @@ ul li:hover .title{
    transition: all 0.3s ease-in-out;  
    z-index: 20;  
    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.49);  
-}  
+} 
+.cont_wrapper{
+  position: relative;
+  width: auto;
+  height: auto;
+} 
+.img_cepillo{
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  z-index: 100;
+  left: 35rem;
+  top: 23rem;
+  transform: rotate(-15deg);
+}
+.img_diente2{
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  z-index: 100;
+  left: 35rem;
+  top: 23rem;
+  transform: rotate(0deg);
+}
+
 .card-wrapper {  
    position: relative;  
    width: 350px;  
@@ -400,7 +424,7 @@ ul li:hover .title{
    font-size: 4.5rem; 
    font-weight: bold;
    font-family: 'Times New Roman', Times, serif;
-   color: #937DC2;
+   color: #e7e1f5;
    text-shadow: 0 0 5px rgb(39, 41, 48);
    text-align: center;
    top: 50%;

@@ -26,12 +26,12 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   if (cliente === "" || servicio === "") {
     resp.classList.add("fail");
-    resp.innerHTML = `Faltan algunos datos, ${cliente}`;
+    resp.innerHTML = `Faltan algunos datos ${cliente}`;
     return false;
   }
   resp.classList.remove("fail");
   resp.classList.add("send");
-  resp.innerHTML = `Se ha enviado tu comentario, ${cliente}`;
+  resp.innerHTML = `Se ha enviado tu comentario ${cliente}`;
 
   window.open(url);
 });
