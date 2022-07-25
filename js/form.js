@@ -3,37 +3,11 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   let telefono = "573136283643";
-  var profilaxis= 2;
 
-
-  var opcion1 = document.getElementById("opc1");
-  var opcion2 = document.getElementById("opc2");
-  var opcion3 = document.getElementById("opc3");
-  var opcion4 = document.getElementById("opc4");
-  var opcion5 = document.getElementById("opc5");
-  var opcion6 = document.getElementById("opc6");
-  var opcion7 = document.getElementById("opc7");
-  var opcion8 = document.getElementById("opc8");
-  var opcion9 = document.getElementById("opc9");
-  var opcion10 = document.getElementById("opc10");
-  var opcion11 = document.getElementById("opc11");
-  var opcion12 = document.getElementById("opc12");
-  var opcion13 = document.getElementById("opc13");
   let cliente = document.querySelector("#cliente").value;
   var servicio = document.getElementById("servicio").value;
   let comentario = document.querySelector("#comentario").value;
   let resp = document.querySelector("#respuesta");
-
-  opcion2.addEventListener("click", () => {
-    juega(profilaxis);
- });
-
- function juega(useropction) {
-   
-if (useropction in opcion2){
-  servicio.innerHTML = "El ganador es el usuario con piedra";
-}
-};
 
 
 
