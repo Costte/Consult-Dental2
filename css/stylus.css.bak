@@ -348,14 +348,15 @@ ul li:hover .title{
 .cont_wrapper{
   position: relative;
   width: auto;  
-  height: auto;;
+  height: auto;
+  border: 2px solid red;
 } 
 .img_cepillo{
   position: absolute;
   width: 15rem;
   height: 10rem;
   z-index: 100;
- right: -2rem;
+ right: 0rem;
   bottom: 0rem;
   transform: rotate(-15deg);
 }
@@ -364,7 +365,7 @@ ul li:hover .title{
   width: 15rem;
   height: 10rem;
   z-index: 100;
- right: -2rem;
+ right: 0rem;
   bottom: 0rem;
   transform: rotate(0deg);
 }
