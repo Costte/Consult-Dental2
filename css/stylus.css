@@ -676,11 +676,16 @@ ul li:hover .title {
     font-size:.8em;
   }
   .form_cierre {
-    top: -13rem;
+    top: -12rem;
     left: 96%;
   }
 }
-
+@media (min-width: 321px) and (max-width: 354px){
+  .form_cierre {
+    top: -15rem;
+    left: 96%;
+  }
+}
 @media (min-width:441px) and (max-width:544px){
   .cabecera {
     height: 100px;
