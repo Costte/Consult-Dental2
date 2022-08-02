@@ -602,6 +602,7 @@ ul li:hover .title {
 @media (min-width: 321px) and (max-width: 440px) {
   .cabecera {
     height: 100px;
+    width: 100%;
   }
   .logo {
     position: relative;
