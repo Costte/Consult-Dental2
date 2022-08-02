@@ -611,7 +611,7 @@ ul li:hover .title {
   .menu {
     position: absolute;
     margin-left: 15%;
-    margin-top: 6rem;
+    margin-top: 5.5rem;
   }
   ul li {
     width: 30px;
@@ -676,7 +676,7 @@ ul li:hover .title {
     font-size:.8em;
   }
   .form_cierre {
-    top: -16rem;
+    top: -13rem;
     left: 96%;
   }
 }
